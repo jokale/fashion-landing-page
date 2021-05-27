@@ -49,8 +49,8 @@ function Countdown() {
 
                    <HeaderOne>THE:STUDIO OPENS IN </HeaderOne>
 <Timer>The timer</Timer>
-       <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan products </h4>
-       <h4>To get exclusive access to the store before general realease open <br></br> sign up to our waitlist <br></br> by entering your email</h4>
+       <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan clothing brand </h4>
+       <h4>To get exclusive access to the store before <br></br>general realease open  sign up to our waitlist <br></br> by entering your email below</h4>
        <form>
            <input placeholder="Write your email email" required></input>
            <button type="submit">submit</button>
