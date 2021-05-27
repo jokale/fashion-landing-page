@@ -14,7 +14,26 @@ left: 1000px;
 const CountText = styled.div `
 position: relative;
 left: 25em;
+text-align: justify;
 `
+
+const HeaderOne = styled.h1 `
+font-family: 'Bebas Neue', cursive;
+`
+
+
+// const laterDate = new Date("Jan 3, 2022 15:30:45").getTime();
+
+// const nowDate = new Date().getTime();
+
+// const difference = laterDate - nowDate;
+
+// let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+// let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+// let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+// let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
 function Countdown() {
     return (
       <div className="Countdown">
@@ -23,7 +42,7 @@ function Countdown() {
         <Countdowner>
           <CountText>
 
-                   <h2>THE J.K STUDIO OPENS IN </h2>
+                   <HeaderOne>THE J.K STUDIO OPENS IN </HeaderOne>
        <h3>Counter goes here </h3>
        <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan products </h4>
        <h4>To get exclusive access to the store before general realease open <br></br> sign up to our waitlist <br></br> by entering your email</h4>
