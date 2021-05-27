@@ -4,7 +4,12 @@ import styled from 'styled-components'
 const Countdowner = styled.div `
 background-color: #746363;
 opacity: 65%;
-text-align: right;
+text-align: center;
+object-position: right;
+height: 1000px;
+width: 50%;
+position: relative;
+left: 1000px;
 `
 function Countdown() {
     return (

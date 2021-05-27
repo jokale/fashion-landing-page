@@ -10,11 +10,11 @@ background-image: url(${background});
 width: 60%;
   height: 1000px;
  /* background-size: contain; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  top: -306px;
+  top: -1000px;
 
 `;
 
