@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Timer from './Timer';
 
 const Countdowner = styled.div `
 background-color: #746363;
@@ -19,6 +20,10 @@ text-align: justify;
 
 const HeaderOne = styled.h1 `
 font-family: 'Bebas Neue', cursive;
+font-size: 4rem;
+position: relative;
+left: -90px;
+border: 1px solid red;
 `
 
 
@@ -42,8 +47,8 @@ function Countdown() {
         <Countdowner>
           <CountText>
 
-                   <HeaderOne>THE J.K STUDIO OPENS IN </HeaderOne>
-       <h3>Counter goes here </h3>
+                   <HeaderOne>THE:STUDIO OPENS IN </HeaderOne>
+<Timer>The timer</Timer>
        <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan products </h4>
        <h4>To get exclusive access to the store before general realease open <br></br> sign up to our waitlist <br></br> by entering your email</h4>
        <form>
