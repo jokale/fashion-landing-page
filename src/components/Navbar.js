@@ -5,16 +5,14 @@ import styled from 'styled-components'
 const Navbarhead = styled.div`
     font-family: Helvetica, Arial, sans-serif;
     font-size: 5rem;
-    color: pink;
+    color: #939393;
     text-align: center;
-
     `
 
 function Navbar() {
     return (
       <div className="Navbar">
-          <Navbarhead>Hello</Navbarhead>
-       <center> <h1>Navbar</h1></center>
+          <Navbarhead> J.K STUDIO</Navbarhead>
       </div>
     );
   }

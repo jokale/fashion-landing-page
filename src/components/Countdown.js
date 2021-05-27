@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components'
 
+const Countdowner = styled.div `
+background-color: #746363;
+opacity: 65%;
+text-align: right;
+`
 function Countdown() {
     return (
       <div className="Countdown">
-       <center> <h1>Countdown</h1></center>
+
+        <Countdowner>
        <h2>THE J.K STUDIO OPENS IN </h2>
        <h3>Counter goes here </h3>
        <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan products </h4>
@@ -13,6 +20,8 @@ function Countdown() {
            <button type="submit">submit</button>
        </form>
        <h5>Already a member? <a href="www.github.com/jokale">Sign in here</a></h5>
+          </Countdowner> 
+      
       </div>
     );
   }
