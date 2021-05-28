@@ -13,13 +13,21 @@ letter-spacing: 3px;
 font-family: 'Bebas Neue', cursive;
 `
 
+const TimeHfour = styled.h6 `
+word-spacing: 1em;
+font-size: smaller;
+position: relative;
+left: 53px;
+top: -10px;
+`
+
 function Timer() {
 
 
     return (
       <div className="Timer">
           <TimerStyle><Countdown date={Date.now() + 50000000000} /> </TimerStyle>
-            <h4>DAYS HOURS MINS SECS</h4>
+            <TimeHfour>DAYS HOURS MINS SECS</TimeHfour>
       </div>
     );
   }

@@ -10,6 +10,13 @@ height: 1000px;
 width: 50%;
 position: relative;
 left: 1000px;
+
+@media (max-width: 1440px) {
+  position: relative;
+  left: 600px;
+  z-index: 1;
+  width: 100%;
+  }
 `
 
 const CountText = styled.div `
@@ -23,21 +30,32 @@ font-family: 'Bebas Neue', cursive;
 font-size: 4rem;
 position: relative;
 left: -90px;
-border: 1px solid red;
+
+@media (max-width: 1440px) {
+ left: -60px;
+  }
 `
 
-
-// const laterDate = new Date("Jan 3, 2022 15:30:45").getTime();
-
-// const nowDate = new Date().getTime();
-
-// const difference = laterDate - nowDate;
-
-// let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-// let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-// let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-// let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+const Form = styled.form `
+ border: none;
+ border-bottom: 2px solid #939393;
+ width: 170px;
+ color: #939393;
+ background-color: transparent;
+ width: 300px;
+ font-size: 6rem;
+ position: relative;
+ top: -60px;
+`
+const Submit = styled.button `
+position: relative;
+top: -20px;
+font-family: 'Bebas Neue', cursive;
+font-size: 1.2rem;
+width: 300px;
+background-color: #939393;
+border: none;
+`
 
 function Countdown() {
     return (
@@ -51,10 +69,15 @@ function Countdown() {
 <Timer>The timer</Timer>
        <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan clothing brand </h4>
        <h4>To get exclusive access to the store before <br></br>general realease open  sign up to our waitlist <br></br> by entering your email below</h4>
-       <form>
-           <input placeholder="Write your email email" required></input>
-           <button type="submit">submit</button>
-       </form>
+       
+      
+         <form> 
+           <Form> <input placeholder="Write your email" required></input>  </Form>
+           <Submit type="submit">SIGN UP </Submit>
+          </form>
+     
+       
+       
        <h5>Already a member? <a href="www.github.com/jokale">Sign in here</a></h5>
           </CountText>
 
