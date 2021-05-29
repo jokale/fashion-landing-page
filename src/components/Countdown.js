@@ -14,7 +14,7 @@ left: 1000px;
 @media (max-width: 1440px) {
   position: relative;
   left: 600px;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   }
 `
@@ -32,7 +32,7 @@ position: relative;
 left: -90px;
 
 @media (max-width: 1440px) {
- left: -60px;
+ left: -50px;
   }
 `
 
@@ -46,6 +46,18 @@ const Form = styled.form `
  font-size: 6rem;
  position: relative;
  top: -60px;
+ fill: none;
+ outline:none;
+ background: transparent;
+
+`
+
+const Input = styled.input `background: none;
+border: none;
+font-size: 1.9rem;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+
 `
 const Submit = styled.button `
 position: relative;
@@ -55,6 +67,8 @@ font-size: 1.2rem;
 width: 300px;
 background-color: #939393;
 border: none;
+height: 50px;
+
 `
 
 function Countdown() {
@@ -66,13 +80,15 @@ function Countdown() {
           <CountText>
 
                    <HeaderOne>THE:STUDIO OPENS IN </HeaderOne>
-<Timer>The timer</Timer>
+            <Timer>The timer</Timer>
        <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan clothing brand </h4>
        <h4>To get exclusive access to the store before <br></br>general realease open  sign up to our waitlist <br></br> by entering your email below</h4>
        
       
          <form> 
-           <Form> <input placeholder="Write your email" required></input>  </Form>
+           
+           {/* <label>Enter your email</label>  */}
+           <Form> <Input placeholder="Write your email" required></Input></Form>
            <Submit type="submit">SIGN UP </Submit>
           </form>
      
