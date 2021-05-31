@@ -11,14 +11,18 @@ width: 260px;
 font-size: 3rem;
 letter-spacing: 3px;
 font-family: 'Bebas Neue', cursive;
+
 `
 
 const TimeHfour = styled.h6 `
 word-spacing: 1em;
 font-size: smaller;
 position: relative;
-left: 53px;
+left: 46px;
 top: -10px;
+@media (max-width: 1440px) {
+ left: 50px;
+  }
 `
 
 function Timer() {

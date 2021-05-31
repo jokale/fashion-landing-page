@@ -29,7 +29,7 @@ const HeaderOne = styled.h1 `
 font-family: 'Bebas Neue', cursive;
 font-size: 4rem;
 position: relative;
-left: -90px;
+left: -65px;
 
 @media (max-width: 1440px) {
  left: -50px;
@@ -38,8 +38,6 @@ left: -90px;
 
 const Form = styled.form `
  border: none;
- border-bottom: 2px solid #939393;
- width: 170px;
  color: #939393;
  background-color: transparent;
  width: 300px;
@@ -49,7 +47,6 @@ const Form = styled.form `
  fill: none;
  outline:none;
  background: transparent;
-
 `
 
 const Input = styled.input `background: none;
@@ -57,17 +54,42 @@ border: none;
 font-size: 1.9rem;
 text-align: center;
 font-family: 'Bebas Neue', cursive;
+position: relative;
+top: -20px;
+border-bottom: 2px solid #939393;
+width: 295px;
+
 
 `
 const Submit = styled.button `
 position: relative;
-top: -20px;
+top: -40px;
 font-family: 'Bebas Neue', cursive;
 font-size: 1.2rem;
 width: 300px;
 background-color: #939393;
 border: none;
 height: 50px;
+
+@media (max-width: 1440px) {
+  top: -50px;
+  }
+`
+
+const SubText = styled.h4 ` 
+ font-family: 'Roboto', sans-serif;
+ text-align: justify;
+ font-size: 1.3rem;
+ line-height: 1.8;
+ position: relative;
+ left: -35px;
+
+ @media (max-width: 1440px) {
+ font-size: 1rem;
+ left: -5px;
+ top: -10px;
+
+  }
 
 `
 
@@ -81,8 +103,10 @@ function Countdown() {
 
                    <HeaderOne>THE:STUDIO OPENS IN </HeaderOne>
             <Timer>The timer</Timer>
-       <h4>We are so excited for you to able to experience <br></br> our amazing organic vegan clothing brand </h4>
-       <h4>To get exclusive access to the store before <br></br>general realease open  sign up to our waitlist <br></br> by entering your email below</h4>
+
+            <SubText>We are so excited for you all to experience <br></br> our  amazing organic vegan clothing.
+       <br></br>To get exclusive access to the store before <br></br>general realease open  sign up to our waitlist <br></br> by entering your email below: 
+       </SubText>
        
       
          <form> 
@@ -93,9 +117,7 @@ function Countdown() {
           </form>
      
        
-       
-       <h5>Already a member? <a href="www.github.com/jokale">Sign in here</a></h5>
-          </CountText>
+                 </CountText>
 
           </Countdowner> 
       
