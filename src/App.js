@@ -4,6 +4,7 @@ import React from 'react';
 import Countdown from './components/Countdown';
 import Navbar from "./components/Navbar";
 import background from "./images/background.jpg";
+import Footer from './components/Footer';
 
 const BackgroundImg = styled.div `
 background-image: url(${background});
@@ -24,6 +25,7 @@ function App() {
       <Navbar/>
      <Countdown/>
       <BackgroundImg/>
+      <Footer/>
     </div>
   );
 }
