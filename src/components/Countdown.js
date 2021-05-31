@@ -94,6 +94,9 @@ const SubText = styled.h4 `
 `
 
 function Countdown() {
+
+  const resetForm = () => {};
+
     return (
       <div className="Countdown">
 
@@ -113,7 +116,7 @@ function Countdown() {
            
            {/* <label>Enter your email</label>  */}
            <Form> <Input placeholder="Write your email" required></Input></Form>
-           <Submit type="submit">SIGN UP </Submit>
+           <Submit type="submit" onClick={resetForm}>SIGN UP </Submit>
           </form>
      
        

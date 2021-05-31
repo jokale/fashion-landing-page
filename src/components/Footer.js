@@ -26,10 +26,11 @@ left: 370px;
 `
 
 function Footer() {
+
     return (
       <div className="Footer">
           <FooterDiv>
-                <a href="https://joannathedeveloper.netlify.app/" target="_blank"><Logo src={logo}/></a>  
+                <a href="https://joannathedeveloper.netlify.app/" target="_blank" rel="noreferrer" ><Logo src={logo}/></a>  
           </FooterDiv>
           <h1>hello header</h1>
         
