@@ -9,4 +9,6 @@ I also used [React Countdown Component](https://github.com/ndresx/react-countdow
 
 Will be uploaded on Vercel once complete.
 
+Available on [Fashion Prelaunch page](https://fashion-landing-page-eight.vercel.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
